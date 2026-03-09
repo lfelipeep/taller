@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat', sans-serif;
+}
+
+/* VARIABLES DE COLOR */
+
+:root{
+--fondo:#f5f5f5;
+--texto:#222;
+--nav:#2e8b57;
+--tarjeta:#ffffff;
+--boton:#2e8b57;
+}
+
+/* TEMA OSCURO */
+
+.dark{
+--fondo:#1e1e1e;
+--texto:#f5f5f5;
+--nav:#14532d;
+--tarjeta:#2a2a2a;
+--boton:#22c55e;
+}
+
+body{
+background:var(--fondo);
+color:var(--texto);
+transition:0.3s;
+}
+
+/* NAVBAR */
+
+nav{
+background:var(--nav);
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-right:15px;
+font-weight:500;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+/* CONTENEDOR */
+
+.container{
+padding:40px;
+text-align:center;
+}
+
+/* TARJETAS */
+
+.card{
+background:var(--tarjeta);
+padding:25px;
+margin:20px auto;
+width:60%;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* BOTON */
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:6px;
+background:var(--boton);
+color:white;
+cursor:pointer;
+font-weight:600;
+}
+
+button:hover{
+opacity:0.9;
+}
+
+/* TITULOS */
+
+h1{
+margin-bottom:20px;
+}
